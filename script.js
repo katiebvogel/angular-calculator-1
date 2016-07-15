@@ -10,13 +10,14 @@ $scope.resultWindow = [];
     console.log($scope.resultWindow);
   };
 
-$scope.clearScreen = function(value){
-    $scope.resultWindow = '';
+$scope.clearScreen = function(){
+    $scope.resultWindow = [];
     $scope.finalAnswer= 0;
   };
 
 
 $scope.getAnswer = function(result) {
+ 
     $scope.total;
     var numOne = $scope.resultWindow[0];
     var numTwo = $scope.resultWindow[2];
@@ -34,6 +35,7 @@ $scope.getAnswer = function(result) {
             if ($scope.operator == '/') {
                 $scope.total= numOne / numTwo;
             }
+              $scope.clearscreen();
             return $scope.total;
       };
     // $scope.finalAnswer = function() {

@@ -41,10 +41,10 @@
                 <button ng-click= "handleClick('/')" ng-model="operator">/</button>
                 <button ng-click= "handleClick('*')" ng-model="operator">*</button>
               </div>
-              <!-- <div class="row">
-                <button ng-click="clearScreen()" ng-init= " ">Clear</button>
+              <div class="row">
+                <button id="clear" ng-click="clearScreen()" class=ng-init= " ">Clear</button>
 
-              </div> -->
+              </div>
             <section id= "answers" ng-model="answerSpot">
               <span ng-repeat="result in resultWindow track by $index">
                 {{result}}
